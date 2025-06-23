@@ -1,13 +1,45 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Student Table</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>this is Home Page</p>
-    <p>Hidhf</p>
-    <p>gdsf</p>
+
+  <h2>Student Records</h2>
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Number</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Add New Student</h3>
+  <form id="addForm">
+    <label for="">Name</label>
+    <input type="text" id="name" placeholder="Name" required>
+    <br>
+    <label for="">ID</label>
+    <input type="text" id="id" placeholder="ID" required>
+    <br>
+    <label for="">Marks</label>
+    <input type="number" id="number" placeholder="Number" required>
+    <br>
+    <button type="submit">Add Student</button>
+  </form>
+
+  <h3>Modify Marks</h3>
+  <form id="modifyForm">
+    <input type="text" id="modifyId" placeholder="Enter ID to Modify" required>
+    <br>
+    <button type="submit">Modify</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 </html>
