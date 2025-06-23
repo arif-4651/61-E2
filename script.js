@@ -1,6 +1,8 @@
 const studentTableBody = document.querySelector("#studentTable tbody");
 let students = [];
 
+// taking data from the from
+
 document.getElementById("addForm").addEventListener("submit", function(e) {
   e.preventDefault();
   const name = document.getElementById("name").value;
@@ -17,6 +19,7 @@ document.getElementById("addForm").addEventListener("submit", function(e) {
   this.reset();
 });
 
+// updating table here
 function updateTable() {
   studentTableBody.innerHTML = "";
   students.forEach(student => {
@@ -29,6 +32,8 @@ function updateTable() {
   });
 }
 
+
+// modify section
 document.getElementById("modifyForm").addEventListener("submit", function(e) {
   e.preventDefault();
   const modifyId = document.getElementById("modifyId").value;
