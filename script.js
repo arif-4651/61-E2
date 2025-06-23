@@ -13,7 +13,9 @@ document.getElementById("addForm").addEventListener("submit", function(e) {
     alert("Student ID already exists!");
     return;
   }
-
+  students.push({name, id, number});
+  updateTable();
+  this.reset();
 });
 
 // updating table here
