@@ -14,9 +14,6 @@ document.getElementById("addForm").addEventListener("submit", function(e) {
     return;
   }
 
-  students.push({ name, id, number });
-  updateTable();
-  this.reset();
 });
 
 // updating table here
